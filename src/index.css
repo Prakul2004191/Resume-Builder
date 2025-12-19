@@ -1,0 +1,163 @@
+/* ===== GLOBAL ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #dbeafe, #f8fafc);
+  color: #111827;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #2563eb;
+  margin-bottom: 10px;
+  letter-spacing: 0.4px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+button.secondary {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+}
+
+/* ===== INPUTS ===== */
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ===== RESUME ===== */
+.resume {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.resume-name {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.resume-contact {
+  font-size: 14px;
+  text-align: right;
+}
+
+/* ===== RESUME GRID ===== */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 2.3fr 1.2fr;
+  gap: 40px;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section p,
+.section li {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ===== SKILLS ===== */
+.skill {
+  display: inline-block;
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+  color: #1e3a8a;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 6px 6px 0 0;
+}
+
+/* ===== PROJECT CARD ===== */
+.project-card {
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ===== ICON TEXT ===== */
+.icon {
+  margin-right: 6px;
+}
+
+/* ===== RESUME LIST ===== */
+.resume-item {
+  padding: 15px;
+  border-radius: 12px;
+  background: #f1f5f9;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.resume-item:hover {
+  background: #e0e7ff;
+  transform: translateX(4px);
+}
